@@ -4,7 +4,7 @@ from flask import FLask, request,jsonify
 app=Flask(__name__)
 
 
-@app.route('/calculate'.methods=['POST]'])
+@app.route('/calculate',methods=['POST]'])
 def calculate():
     data=request.get_json()
     num1=data.get('num1')
